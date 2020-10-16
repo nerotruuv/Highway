@@ -1,5 +1,5 @@
-#ifndef Vehilcle_h
-#define Vehilcle_h
+#ifndef vehilcle_h
+#define vehilcle_h
 
 
 
@@ -8,7 +8,8 @@ using namespace std;
 class Vehicle {
 
     public:
-        void set_values(int accel, int brake, int lenght);
+        Vehicle(int accel, int brake, int lenght) : max_accel(accel), max_brake(brake), lenght(lenght) {}              //TODO: tijdelijke constructor
+        //void set_values(int accel, int brake, int lenght);    //TODO: uncoomment wanneer childs aangemaakt zijn
         void accelerate();
         void brake();
 
