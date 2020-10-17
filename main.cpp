@@ -1,8 +1,12 @@
 #include <iostream>
+#include "include/lane.h"
 
 using namespace std;
 
-int main(){
-    cout << "vroom vroom" << endl;
+int main(){ 
+    
+    Lane uno;
+    uno.new_vehicle(fast);
+    uno.print_lane();  
     return 0;
 }

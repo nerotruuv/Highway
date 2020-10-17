@@ -1,0 +1,73 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {           
+            "label": "Compiler",
+            "type": "shell",
+            "command": "g++ lane.cpp vehicle.cpp main.cpp -o highway ",
+            //"args": [" -I ${workspaceFolder}\\include" ],
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
+
+//${workspaceFolder}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+,
+{
+    "label": "Linker",
+    "type": "shell",
+    "command": "g++",
+    "args": [
+        "-o",
+        //"${workspaceFolder}\\main.o",
+        "${workspaceFolder}\\**.o",                               
+        "${fileDirname}\\Highway.exe",
+    ]
+},    
+{    
+    "label" : "Builder",
+    "dependsOn" : [
+        "Compiler",
+        "Linker"
+    ],           
+    "group": {
+        "kind": "build",
+        "isDefault": true
+    }
+}
+
+"-c",  
+"${workspaceFolder}\\main.cpp", "${workspaceFolder}\\src\\lane.cpp", "${workspaceFolder}\\src\\vehicle.cpp"              
+//"${workspaceFolder}\\**.cpp",
+//"${fileDirname}\\**.h",
+
+*/

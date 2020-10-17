@@ -1,4 +1,4 @@
-#include "lane.h"
+#include "include/lane.h"
 
 Lane::Lane(){
 
@@ -22,5 +22,7 @@ void Lane::remove_vehicle(Vehicle *vhc){
 }
 
 void Lane::print_lane(){
-
+    for(int i = vehicles.size(); i > 0; i--){
+        cout << vehicles[i].distance << " | " << vehicles[i].vhc->get_id();
+    }
 }
