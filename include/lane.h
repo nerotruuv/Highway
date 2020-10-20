@@ -14,8 +14,9 @@ enum type{truck, fast, slow};
 
 struct location
 {
-    Vehicle *vhc;
-    long int distance;
+    Vehicle* vhc;
+    long int distance_total;
+    long int distance_between;
 };
 
 
@@ -26,9 +27,11 @@ class Lane {
         void new_vehicle(type vhc); //TODO: hier moet mischien nog een locatie aan worden toegevoegd zodat afslagen erbij kunnen komen
         void remove_vehicle(Vehicle *vhc);
         void print_lane();          //TODO: dit laat zien de id van de vehicle en dan de afstand naar de andere id's, ongeveer.
+        long int calc_between(location vhc_back, location vhc_front);
+        void move();
 
     private:
-        deque<location> vehicles;   //TODO: dit moet een deque worden
+        deque<location> vhc_location;   //TODO: dit moet een deque worden       
         
 };
 

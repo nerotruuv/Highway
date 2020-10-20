@@ -3,5 +3,14 @@
         {
             "path": "."
         }
-    ]
+    ],
+    "settings": {
+        "files.associations": {
+            "iostream": "cpp",
+            "iterator": "cpp",
+            "array": "cpp",
+            "deque": "cpp",
+            "vector": "cpp"
+        }
+    }
 }
